@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
@@ -16,16 +16,16 @@
             <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav">
                 <li class="nav-item me-5 ">
-                <a class="nav-link" href="HomePage.php"><h3>GenreGauger</h3></a>
+                <a class="nav-link" href="../Home_Page/HomePage.php"><h3>GenreGauger</h3></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
-                <a class="nav-link" href="ReviewsPage.php"><h5>Reviews</h5></a>
+                <a class="nav-link" href="../Reviews_Page/ReviewsPage.php"><h5>Reviews</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
-                <a class="nav-link" href=""><h5>Genres</h5></a>
+                <a class="nav-link" href="../Genre/GenresPage.php"><h5>Genres</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
-                <a class="nav-link" href=""><h5>Leaderboard</h5></a>
+                <a class="nav-link" href="../Leaderboard/LeaderboardPage.php"><h5>Leaderboard</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href=""><h5>Favorites</h5></a>
