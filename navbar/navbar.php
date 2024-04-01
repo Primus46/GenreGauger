@@ -22,7 +22,7 @@
                 <a class="nav-link" href="../Reviews_Page/ReviewsPage.php"><h5>Reviews</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
-                <a class="nav-link" href="../Genre_Page/GenresPage.php"><h5>Genres</h5></a>
+                <a class="nav-link" href="../Genres_Page/GenresPage.php"><h5>Genres</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href="../Leaderboard_Page/LeaderboardPage.php"><h5>Leaderboard</h5></a>
