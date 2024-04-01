@@ -19,9 +19,6 @@
                 <div class="col">
                     <div class="box"></div>
                 </div>
-                <div class="col">
-                    <div class="box"></div>
-                </div>
             </div>
         </div>
     </body>

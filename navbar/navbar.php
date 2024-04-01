@@ -16,10 +16,10 @@
             <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav">
                 <li class="nav-item me-5 ">
-                <a class="nav-link" href=""><h3>GenreGauger</h3></a>
+                <a class="nav-link" href="HomePage.php"><h3>GenreGauger</h3></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
-                <a class="nav-link" href=""><h5>Reviews</h5></a>
+                <a class="nav-link" href="ReviewsPage.php"><h5>Reviews</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href=""><h5>Genres</h5></a>
