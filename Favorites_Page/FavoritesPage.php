@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../CrossPage.css">
 </head>
     <body>
-        <?php require '../navbar/navbar.php';?>
+        <?php require '../Reuseable_Components/navbar/navbar.php';?>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
