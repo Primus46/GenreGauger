@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../CrossPage.css">
 </head>
-    <body>
+    <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
         <div class="container-fluid">
             <div class="row">

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../CrossPage.css">
 </head>
-    <body>
+    <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
         <div class="container-fluid">
             <img src="../images/wepik-simple-futuristic-dark-neon-gaming-twitter-header-20240308074847WF8g.png" class="img-fluid" alt="GenreGauger" style="width: 100%"> 
