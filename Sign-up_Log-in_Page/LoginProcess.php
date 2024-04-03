@@ -1,9 +1,9 @@
 <?php
     session_start();
-    include "../Sign-up_Log-in/db_connect.php";
+    include "../db_connect.php";
     $username = $_POST["username"];
     $password= $_POST["password"];
-    $sql= "SELECT * from t1 WHERE email ='".$email."'";
+    $sql= "SELECT * from user_data WHERE username ='".$username."'";
     $results = $conn->query($sql);
     if(mysqli_num_rows($results) > 0){
         $row = mysqli_fetch_array($results);
@@ -15,7 +15,7 @@
         $hash = $row["password"];
         if(password_verify($password,$hash)){
             echo "password match ...";
-            header("Location:next_page.php");  
+            header("Location:../Home_Page/HomePage.php");  
         }else {
             echo "invalid password";
         }

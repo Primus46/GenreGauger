@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +39,14 @@
                     <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success m3- 4" type="submit"><i class="fa fa-search"></i></button>
                 </form>
-                <button type="button" class="btn btn-outline-primary">Sign Up</button>
+                <?php 
+                    if(isset($_SESSION["username"])){
+                        include "navbuttons/ProfileButton.php";
+                    }
+                    else{
+                        include "navbuttons/sign_in_buttons.php";
+                    }
+                ?>
             </div>
         </div>
     </nav>
