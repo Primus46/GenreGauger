@@ -9,10 +9,11 @@
     $sql = "INSERT INTO user_data(fname,lname,email, username, password) VALUES ('".$fname."','".$lname."','".$email."','".$username."','".$password."')";
     
     if($conn->query($sql) === TRUE) {
-        echo "The following informations are submitted: ";
-        echo  "<p> Full Name: ".$fname." ".$lname."</p>";
-        echo  "<p> Email: ".$email."</p>";
-        echo  "<p> username: ".$username."</p>";
+        // echo "The following informations are submitted: ";
+        // echo  "<p> Full Name: ".$fname." ".$lname."</p>";
+        // echo  "<p> Email: ".$email."</p>";
+        // echo  "<p> username: ".$username."</p>";
+        header("Location:../Home_Page/HomePage.php"); 
     }
      else{
          echo "something went wrong ..<br/>";
