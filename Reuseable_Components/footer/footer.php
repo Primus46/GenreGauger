@@ -1,4 +1,4 @@
-<footer class="page-footer shadow fixed-bottom">
+<footer class="page-footer shadow bottom">
     <div>
         <h3>This is the footer</h3>
     </div>

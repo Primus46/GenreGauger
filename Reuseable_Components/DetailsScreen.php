@@ -1,3 +1,19 @@
+<?php
+    if(isset($_GET['ID'])){
+        include "../db_connect.php";
+        $ID = mysqli_real_escape_string($conn, $_GET['ID']);
+
+        $sql = "SELECT * FROM genres WHERE genre_id= '$ID'";
+        $results = $conn->query($sql);
+        $fetch = mysqli_fetch_assoc($results);
+
+    }else{
+        header('Location: ../Home_Page/HomePage.php');
+    }
+
+;?>
+
+
 <div class="container my-3"> 
     <div class="row my-auto justify-content-center d-flex ">
     <div class="my-3">
@@ -6,10 +22,10 @@
             <img src="../images/placeholder.png">
             </div>
             <div class="card-body">
-                <h4 class="card-title text-center"><?php echo $data['1']; ?></h4>
-                <p class="card-text">Description</p>
-                <p class="card-text">Rating <?php echo $data['2']; ?></p>
-                <p class="card-text">Number of ratings <?php echo $data['3']; ?></p>
+                <h4 class="card-title text-center"><?php echo $fetch['genre_name']; ?></h4>
+                <p class="card-text">Description: </p>
+                <p class="card-text">Rating: <?php echo $fetch['rating']; ?></p>
+                <p class="card-text">Number of ratings: <?php echo $fetch['number of ratings']; ?></p>
             </div>
             <div class="card-header">
                 <a class="btn" data-bs-toggle="collapse" href="#collapseOne">

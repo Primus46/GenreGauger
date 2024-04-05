@@ -102,7 +102,7 @@
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $RandArr[3][0]; ?></h4>
                             <p class="card-text"><?php echo $RandArr[3][1]; ?></p>
-                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[3][1]; ?></a>
                         </div>
                     </div>
                     </div>
@@ -117,7 +117,7 @@
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $RandArr[4][0]; ?></h4>
                             <p class="card-text"><?php echo $RandArr[4][1]; ?></p>
-                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[4][1]; ?></a>
                         </div>
                     </div>
                     </div>
@@ -132,7 +132,7 @@
                         <div class="card-body">
                             <h4 class="card-title"><?php echo $RandArr[5][0]; ?></h4>
                             <p class="card-text"><?php echo $RandArr[5][1]; ?></p>
-                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[5][1]; ?></a>
                         </div>
                     </div>
                     </div>

@@ -1,6 +1,5 @@
 <?php 
-include "GenresData.php";
-$_SESSION[$StandardArr['0']];
+// $_SESSION[$StandardArr];
 function Dynamic_Cards(){
     include "GenresData.php";
 
@@ -39,6 +38,8 @@ function Dynamic_Cards(){
     function Dynamic_DetailsScreen(){
         include "GenresData.php";
 
+        
+
         $CurrentPlaceArr = array();
         $x = sizeof($CurrentPlaceArr) / 2;
         
@@ -46,7 +47,8 @@ function Dynamic_Cards(){
             foreach($StandardArr as $data){
                 include '../Reuseable_Components/DetailsScreen.php';
                 $data[$i];
-                break;
+                if($data[$i] == $data['0']){
+                }
             }
 
         }
@@ -74,5 +76,6 @@ function Dynamic_Cards(){
 
 
     // include "ReviewsData.php";
-    print_r($StandardArr);
+    // print_r($StandardArr);
+
 ; ?>

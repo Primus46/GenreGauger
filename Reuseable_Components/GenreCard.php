@@ -5,12 +5,17 @@
         </div>
         <div class="card-body">
             <h4 class="card-title text-center"><?php echo $data['1']; ?></h4>
-            <p class="card-text">Rating <?php echo $data['2']; ?></p>
+            <p class="card-text">Rating: <?php echo $data['2']; ?></p>
             <div class="justify-content-between align-items-center">
                 <?php include "../Reuseable_Components/Ratings/Star rating.php";?>
             </div>
-            <p class="card-text">Number of ratings <?php echo $data['3']; ?></p>
-            <a href="../Genres_Page/DetailsPage.php" class="btn btn-primary"><?php echo $data['1']; ?></a>
+            <p class="card-text">Number of ratings: <?php echo $data['3']; ?></p>
+            <p class="btn btn-basic">
+            <?php echo $data['4'];
+            $data['0']; 
+            ?></p> 
+            
+            </a>
         </div>
     </div>
 </div>
