@@ -1,6 +1,6 @@
-<footer class="page-footer shadow">
+<footer class="page-footer shadow fixed-bottom">
     <div>
-        
+        <h3>This is the footer</h3>
     </div>
     <section>
         <h3>attribute links</h3>

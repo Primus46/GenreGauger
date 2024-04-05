@@ -7,7 +7,7 @@
 </head>
     <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
-
+        <?php include "../Genres_Data/DataFunctions.php";?>
 
         <?php Dynamic_DetailsScreen();?>
         

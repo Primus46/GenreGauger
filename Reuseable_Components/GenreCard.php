@@ -10,7 +10,7 @@
                 <?php include "../Reuseable_Components/Ratings/Star rating.php";?>
             </div>
             <p class="card-text">Number of ratings <?php echo $data['3']; ?></p>
-            <a href="#" class="btn btn-primary"><?php echo $data['1']; ?></a>
+            <a href="../Genres_Page/DetailsPage.php" class="btn btn-primary"><?php echo $data['1']; ?></a>
         </div>
     </div>
 </div>

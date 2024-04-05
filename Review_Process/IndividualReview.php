@@ -6,7 +6,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
     <body class="text-bg-dark">
-    <?php require '../Reuseable_Components/navbar/navbar.php';?>
     <div class="container">
         <h2>  <?php echo "Welcome ".$_SESSION['username'];?></h2>
         <div class="container">
