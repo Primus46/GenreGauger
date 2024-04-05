@@ -23,5 +23,6 @@
                 </div>
             </div>
         </div>
+        <?php include '../Reuseable_Components/footer/footer.php';?>
     </body>
 </html>

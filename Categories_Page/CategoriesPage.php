@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Genre Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../CrossPage.css">
 </head>
     <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
-        <?php include '../Genres_Data/GenresData.php';?>
-        <?php include "../Genres_Data/DataFunctions.php";?>
-
-        <div class="container my-3"> 
-            <div class="row my-auto justify-content-center d-flex ">
-                <?php Dynamic_Cards();?>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="box"></div>
+                </div>
             </div>
         </div>
         <?php include '../Reuseable_Components/footer/footer.php';?>

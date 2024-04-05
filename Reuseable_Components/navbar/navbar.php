@@ -23,7 +23,7 @@
                 <a class="nav-link" href="../Home_Page/HomePage.php"><h3>GenreGauger</h3></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
-                <a class="nav-link" href="../Reviews_Page/ReviewsPage.php"><h5>Reviews</h5></a>
+                <a class="nav-link" href="../Categories_Page/CategoriesPage.php"><h5>Categories</h5></a>
                 </li>
                 <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href="../Genres_Page/GenresPage.php"><h5>Genres</h5></a>

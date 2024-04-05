@@ -40,6 +40,8 @@
   </Style>
 </head>
     <body>
+    <?php include "../Genres_Data/DataFunctions.php";?>
+    
     <div class="container text-center my-3">
     <h2 class="font-weight-light">Genre's for you</h2>
     <div class="row my-auto justify-content-center">
@@ -47,32 +49,92 @@
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="col-md-3">
-                        <?php include "../Reuseable_Components/Card.php";?>
+                    <div class="card mx-5">
+                        <div class="card-img-top">
+                        <img src="../images/placeholder.png" class="img-fluid">
+                        </div>
+                        <div class="card-img-overlay">Slide 1</div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $RandArr[0][0]; ?></h4>
+                            <p class="card-text"><?php echo $RandArr[0][1]; ?></p>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[0][1]; ?></a>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <?php include "../Reuseable_Components/Card.php";?>
+                    <div class="card mx-5">
+                        <div class="card-img-top">
+                        <img src="../images/placeholder.png" class="img-fluid">
+                        </div>
+                        <div class="card-img-overlay">Slide 2</div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $RandArr[1][0]; ?></h4>
+                            <p class="card-text"><?php echo $RandArr[1][1]; ?></p>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[1][1]; ?></a>
+                        </div>
+                    </div>                    
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <?php include "../Reuseable_Components/Card.php";?>
+                    <div class="card mx-5">
+                        <div class="card-img-top">
+                        <img src="../images/placeholder.png" class="img-fluid">
+                        </div>
+                        <div class="card-img-overlay">Slide 3</div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $RandArr[2][0]; ?></h4>
+                            <p class="card-text"><?php echo $RandArr[2][1]; ?></p>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <?php include "../Reuseable_Components/Card.php";?>
+                    <div class="card mx-5">
+                        <div class="card-img-top">
+                        <img src="../images/placeholder.png" class="img-fluid">
+                        </div>
+                        <div class="card-img-overlay">Slide 4</div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $RandArr[3][0]; ?></h4>
+                            <p class="card-text"><?php echo $RandArr[3][1]; ?></p>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <?php include "../Reuseable_Components/Card.php";?>
+                    <div class="card mx-5">
+                        <div class="card-img-top">
+                        <img src="../images/placeholder.png" class="img-fluid">
+                        </div>
+                        <div class="card-img-overlay">Slide 5</div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $RandArr[4][0]; ?></h4>
+                            <p class="card-text"><?php echo $RandArr[4][1]; ?></p>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-md-3">
-                        <?php include "../Reuseable_Components/Card.php";?>
+                    <div class="card mx-5">
+                        <div class="card-img-top">
+                        <img src="../images/placeholder.png" class="img-fluid">
+                        </div>
+                        <div class="card-img-overlay">Slide 6</div>
+                        <div class="card-body">
+                            <h4 class="card-title"><?php echo $RandArr[5][0]; ?></h4>
+                            <p class="card-text"><?php echo $RandArr[5][1]; ?></p>
+                            <a href="#" class="btn btn-primary"><?php echo $RandArr[2][1]; ?></a>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
