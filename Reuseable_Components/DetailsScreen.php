@@ -23,7 +23,7 @@
             </div>
             <div class="card-body">
                 <h4 class="card-title text-center"><?php echo $fetch['genre_name']; ?></h4>
-                <p class="card-text">Description: </p>
+                <p class="card-text">Description: <?php echo $fetch['Description'];?></p>
                 <p class="card-text">Rating: <?php echo $fetch['rating']; ?></p>
                 <p class="card-text">Number of ratings: <?php echo $fetch['number of ratings']; ?></p>
             </div>
