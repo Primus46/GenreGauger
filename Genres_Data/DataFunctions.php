@@ -58,14 +58,18 @@ function Dynamic_Cards(){
     // echo sizeof($StandardArr);
 
     function Dynamic_CardsRand(){
-    //     include "GenresDataRand.php";
-    //     for ($i = 0; $i <= 1; $i++) {
-    //         foreach($RandArr as $data){
-    //             $data[$i];
-    //             include '../Reuseable_Components/GenreCard.php';
+        include "GenresDataRand.php";
+
+    $CurrentPlaceArr = array();
+    $x = sizeof($CurrentPlaceArr) / 2;
+    
+        for ($i = 0; $i <= $x; $i++) {
+            foreach($RandArr as $data){
+                $data[$i];
+                include '../Reuseable_Components/GenreCard.php';
                 
-    //         }
-    //     }
+            }
+        }
     }
     
     // function ReviewSort(){
