@@ -79,17 +79,24 @@
     // include "ReviewsData.php";
     // print_r($StandardArr);
     
-    function Review_CardCount(){
+    function Review_CardCountandInfo(){
         include "ReviewsData.php";
 
-        $CurrentPlaceArr = array();
-        $x = sizeof($CurrentPlaceArr) / 2;
-        
-        for ($i = 0; $i <= $x; $i++) {
-            foreach($ReviewArr as $RE_data){
+        if(isset($_GET['ID'])){
+            include "../db_connect.php";
+            $ID = mysqli_real_escape_string($conn, $_GET['ID']);
+    
+            $sql = "SELECT * FROM genre_reviews 
+            LEFT JOIN genres ON genre_reviews.genre_id = genres.genre_id 
+            WHERE genre_reviews.genre_id= '$ID'";
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
                 include '../Reuseable_Components/ReviewCard.php';
-                $RE_data[$i];
             }
+
+        }else{
+            header('Location: ../Home_Page/HomePage.php');
         }
     }
 

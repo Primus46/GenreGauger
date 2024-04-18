@@ -1,19 +1,3 @@
-<?php
-    if(isset($_GET['ID'])){
-        include "../db_connect.php";
-        $ID = mysqli_real_escape_string($conn, $_GET['ID']);
-
-        $sql = "SELECT * FROM genre_reviews WHERE genre_id= '$ID'";
-        $results = $conn->query($sql);
-        $fetch = mysqli_fetch_assoc($results);
-
-    }else{
-        header('Location: ../Home_Page/HomePage.php');
-    }
-
-;?>
-
-
 <div class="container my-3"> 
     <div class="row my-auto justify-content-around d-flex ">
     <div class="my-3">
@@ -25,21 +9,18 @@
                     <div class="card mx-2">
                         <div class="card-header">
                                 <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                                Write a Review
+                                <h6>Write a Review</h6>
                                 </a>
                             </div>
                             <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
                                 <div class="card-body">
-                                    
-                                    <div class="dropdown-menu">
-                                    <!-- <?php include "../Review_Process/IndividualReview.php";?> -->
-                                    </div>
+                                    <?php include "../Review_Process/IndividualReview.php";?>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container my-1">
-                        <?php Review_CardCount();?>
+                        <?php Review_CardCountandInfo();?>
                     </div>
                 </div>
             </div>
