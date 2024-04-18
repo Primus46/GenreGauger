@@ -3,7 +3,7 @@
         include "../db_connect.php";
         $ID = mysqli_real_escape_string($conn, $_GET['ID']);
 
-        $sql = "SELECT * FROM genres WHERE genre_id= '$ID'";
+        $sql = "SELECT * FROM genre_reviews WHERE genre_id= '$ID'";
         $results = $conn->query($sql);
         $fetch = mysqli_fetch_assoc($results);
 
@@ -22,7 +22,7 @@
                 <h4>Reviews</h4>
                 </div>
                 <div class="card-body">
-                    <div class="card mx-3">
+                    <div class="card mx-2">
                         <div class="card-header">
                                 <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
                                 Write a Review
@@ -38,10 +38,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container my-3">
-                    <div class="card mx-4">
+                    <div class="container my-1">
                         <?php Review_CardCount();?>
-                    </div>
                     </div>
                 </div>
             </div>

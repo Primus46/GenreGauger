@@ -89,7 +89,6 @@
             foreach($ReviewArr as $RE_data){
                 include '../Reuseable_Components/ReviewCard.php';
                 $RE_data[$i];
-                echo "<br>";
             }
         }
     }
