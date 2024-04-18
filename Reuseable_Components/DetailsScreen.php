@@ -27,16 +27,6 @@
                 <p class="card-text">Rating: <?php echo $fetch['rating']; ?></p>
                 <p class="card-text">Number of ratings: <?php echo $fetch['number of ratings']; ?></p>
             </div>
-            <div class="card-header">
-                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                Reviews
-                </a>
-            </div>
-            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-                <div class="card-body">
-                </div>
-            </div>
         </div>
-    </div>
     </div>
 </div>
