@@ -1,6 +1,8 @@
 <h4>  <?php echo "Welcome ".$_SESSION['username'];?></h4>
+<?php $_SESSION['genre_id'];?>
+<?php $_SESSION['user_id'];?>
 <h6>Review form</h6>
-<form method = "POST" action="review_process.php">
+<form method = "POST" action="../Review_Process/ReviewProcess.php">
     <div class="form-group">
     <label for="title">Title:</label>
     <input type="text" class="form-control" id="title" placeholder="Review Title" name="title">

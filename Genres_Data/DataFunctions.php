@@ -100,4 +100,21 @@
         }
     }
 
+    function User_CardInfo(){
+        include "ReviewsData.php";
+
+        if(isset($_GET['ID'])){
+            include "../db_connect.php";
+            $ID = mysqli_real_escape_string($conn, $_GET['ID']);
+    
+            $sql = "SELECT * FROM user_data
+            WHERE user_id= '$ID'";
+            $results = $conn->query($sql);
+            $fetch = mysqli_fetch_assoc($results);
+
+        }else{
+            header('Location: ../Home_Page/HomePage.php');
+        }
+    }
+
 ; ?>

@@ -8,7 +8,7 @@
     <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
         <?php include "../Genres_Data/DataFunctions.php";?>
-
+        
         <section>
           <?php require '../Reuseable_Components/DetailsScreen.php';?>
         </section>

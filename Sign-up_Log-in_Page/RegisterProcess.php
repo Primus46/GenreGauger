@@ -6,7 +6,8 @@
     $username = $_POST["username"];
     $pwd = $_POST["password"];
     $password = password_hash($pwd,PASSWORD_DEFAULT);
-    $sql = "INSERT INTO user_data(fname,lname,email, username, password) VALUES ('".$fname."','".$lname."','".$email."','".$username."','".$password."')";
+    $sql = "INSERT INTO user_data(fname,lname,email, username, password) 
+    VALUES ('".$fname."','".$lname."','".$email."','".$username."','".$password."')";
     
     if($conn->query($sql) === TRUE) {
         // echo "The following informations are submitted: ";

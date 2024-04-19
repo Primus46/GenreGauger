@@ -7,6 +7,8 @@
         $results = $conn->query($sql);
         $fetch = mysqli_fetch_assoc($results);
 
+        
+        $_SESSION["genre_id"]=$ID;
     }else{
         header('Location: ../Home_Page/HomePage.php');
     }

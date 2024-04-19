@@ -8,11 +8,11 @@
                 <div class="card-body">
                     <div class="card mx-2">
                         <div class="card-header">
-                                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-                                <h6>Write a Review</h6>
-                                </a>
+                        <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#reviewPanel" aria-expanded="false" aria-controls="reviewPanel">
+                            Write a Review
+                        </button>
                             </div>
-                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div id="reviewPanel" class="collapse">
                                 <div class="card-body">
                                     <?php include "../Review_Process/IndividualReview.php";?>
                                 </div>

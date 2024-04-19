@@ -40,7 +40,8 @@
                     <button class="btn btn-outline-success m3- 4" type="submit"><i class="fa fa-search"></i></button>
                 </form>
                 <?php 
-                    if(isset($_SESSION["username"])){
+                    if(isset($_SESSION["username"], $_SESSION['user_id'])){
+                        include "navbuttons/LogoutButton.php";
                         include "navbuttons/ProfileButton.php";
                     }
                     else{
