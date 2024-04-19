@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../CrossPage.css">
 </head>
     <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
-
-        <div class="container mx-3 my-3">
+        <?php include '../Reuseable_Components/Models.php' ;?>
+        
+        <div class="container-fluid">
           <div class="row my-auto justify-content-left d-flex ">
+            <div class="col-6 border-end">
               <?php include "../Reuseable_Components/ProfileCard.php" ;?>
+            </div>
+            <div class="col-6">
+
+            </div>
           </div>
         </div>
 
