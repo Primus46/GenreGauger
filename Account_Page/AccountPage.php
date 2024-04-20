@@ -14,11 +14,12 @@
               <?php include "../Reuseable_Components/ProfileCard.php" ;?>
             </div>
             <div class="col-6">
-
+              
             </div>
           </div>
         </div>
-
-        <?php include '../Reuseable_Components/footer/footer.php';?>
+        <div class="fixed-bottom">
+          <?php include '../Reuseable_Components/footer/footer.php';?>
+        </div>
     </body>
 </html>

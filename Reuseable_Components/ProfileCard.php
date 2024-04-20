@@ -1,3 +1,7 @@
+<?php 
+    include "../Update_Functions/UpdateFunctions.php";
+?>
+
 <div class="row">
     <div class="col-6 mt-3 pe-0">
         <div class="card">
@@ -42,5 +46,12 @@
             <label>UID:</label>
             <label class="form-control"><?php echo $_SESSION['user_id']; ?></label>
         </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <?php
+            if(isset($message)) echo $message; ?>
     </div>
 </div>

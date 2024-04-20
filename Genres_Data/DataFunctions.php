@@ -3,20 +3,6 @@
     function Dynamic_Cards(){
         include "GenresData.php";
 
-        // foreach($StandardArr as $data){
-        //     echo $data['2'] .' ';
-        // }
-        
-        // $i = 0;
-        // $x = sizeof($StandardArr);
-
-        // while ($i < $x) {
-        //     foreach($StandardArr[$i] as $data){
-        //         include '../Reuseable_Components/GenreCard.php';
-        //     }
-        //     $i++;
-        // }
-        
         $CurrentPlaceArr = array();
         $x = sizeof($CurrentPlaceArr) / 2;
         
@@ -27,11 +13,6 @@
             }
         }
 
-            // for ($i = 0; $i < sizeof($StandardArr); $i++) {
-            //     foreach($StandardArr[$i] as $data){
-            //         include '../Reuseable_Components/GenreCard.php';
-            //     }
-            // }
     }
 
     function Dynamic_DetailsScreen(){
@@ -47,7 +28,6 @@
                 if($data[$i] == $data['0']){
                 }
             }
-
         }
     }
     
@@ -78,7 +58,31 @@
 
     // include "ReviewsData.php";
     // print_r($StandardArr);
+    function Review_CardTotal(){
+        include "ReviewsData.php";
+
+        if(isset($_GET['ID'])){
+            include "../db_connect.php";
+            $ID = mysqli_real_escape_string($conn, $_GET['ID']);
     
+            $sql = "SELECT * FROM genre_reviews 
+            LEFT JOIN genres ON genre_reviews.genre_id = genres.genre_id 
+            WHERE genre_reviews.genre_id= '$ID'";
+            $results = $conn->query($sql);
+
+            $x = 0;
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                $x++;
+            }
+
+            echo $x;
+
+        }else{
+            header('Location: ../Home_Page/HomePage.php');
+        }
+    }
+
     function Review_CardCountandInfo(){
         include "ReviewsData.php";
 

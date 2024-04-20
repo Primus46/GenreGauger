@@ -3,7 +3,8 @@
     <div class="my-3">
         <div class="card mx-3">
             <div class="card-header">
-                <h4>Reviews</h4>
+                <h4>Reviews:</h4>
+                <p>Count: <?php Review_CardTotal();?></p>
                 </div>
                 <div class="card-body">
                     <div class="card mx-2">
