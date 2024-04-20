@@ -35,9 +35,9 @@
                 <a class="nav-link" href="../Favorites_Page/FavoritesPage.php"><h5>Favorites</h5></a>
                 </li>
             </ul>
-                <form class="d-flex mx-auto" role="search">
-                    <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success m3- 4" type="submit"><i class="fa fa-search"></i></button>
+                <form class="d-flex mx-auto" role="search" action="../Search_functions/searchPage.php" method="post">
+                    <input class="form-control me-2" style="width: 400px" type="search" placeholder="Search" name="K_search" id="K_search" aria-label="Search">
+                    <button class="btn btn-outline-success m3- 4" name="SearchSubmit" type="submit"><i class="fa fa-search"></i></button>
                 </form>
                 <?php 
                     if(isset($_SESSION['user_id'])){

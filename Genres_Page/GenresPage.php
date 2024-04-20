@@ -12,7 +12,7 @@
 
         <div class="container my-3"> 
             <div class="row my-auto justify-content-center d-flex ">
-                <?php Dynamic_Cards();?>
+                <?php Genre_Cards();?>
             </div>
         </div>
         <?php include '../Reuseable_Components/footer/footer.php';?>

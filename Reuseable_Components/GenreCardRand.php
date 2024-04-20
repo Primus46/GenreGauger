@@ -4,14 +4,15 @@
         <img src="../images/placeholder.png" class="img-fluid">
         </div>
         <div class="card-body">
-            <h4 class="card-title text-center"><?php echo $fetch['genre_name']; ?></h4>
-            <p class="card-text">Rating: <?php echo $fetch['rating']; ?></p>
+            <h4 class="card-title text-center"><?php echo $data['1']; ?></h4>
+            <p class="card-text">Rating: <?php echo $data['2']; ?></p>
             <div class="justify-content-between align-items-center">
                 <?php include "../Reuseable_Components/Ratings/Star rating.php";?>
             </div>
-            <p class="card-text">Number of ratings: <?php echo $fetch['number of ratings']; ?></p>
+            <p class="card-text">Number of ratings: <?php echo $data['3']; ?></p>
             <p class="btn btn-basic">
-            <?php echo "<a href='../Genres_Page/DetailsPage.php?ID={$fetch['genre_id']}'>{$fetch['genre_name']}</a><br>\n"; 
+            <?php echo $data['4'];
+            $data['0']; 
             ?></p> 
             
             </a>

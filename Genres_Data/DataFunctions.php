@@ -14,6 +14,18 @@
         }
 
     }
+    
+    function Genre_Cards(){
+            include "../db_connect.php";
+    
+            $sql = "SELECT * FROM genres";
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                include '../Reuseable_Components/GenreCard.php';
+            }
+
+    }
 
     function Dynamic_DetailsScreen(){
         include "GenresData.php";
@@ -43,7 +55,7 @@
         for ($i = 0; $i <= $x; $i++) {
             foreach($RandArr as $data){
                 $data[$i];
-                include '../Reuseable_Components/GenreCard.php';
+                include '../Reuseable_Components/GenreCardRand.php';
                 
             }
         }
