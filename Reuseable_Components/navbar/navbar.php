@@ -28,9 +28,9 @@
                 <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href="../Genres_Page/GenresPage.php"><h5>Genres</h5></a>
                 </li>
-                <li class="nav-item me-3 mt-2">
+                <!-- <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href="../Leaderboard_Page/LeaderboardPage.php"><h5>Leaderboard</h5></a>
-                </li>
+                </li> -->
                 <li class="nav-item me-3 mt-2">
                 <a class="nav-link" href="../Favorites_Page/FavoritesPage.php"><h5>Favorites</h5></a>
                 </li>

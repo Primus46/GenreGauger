@@ -8,16 +8,8 @@
     <body class="text-bg-dark">
         <?php require '../Reuseable_Components/navbar/navbar.php';?>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="box"></div>
-                </div>
-                <div class="col">
-                    <div class="box"></div>
-                </div>
-                <div class="col">
-                    <div class="box"></div>
-                </div>
+            <div class="row text-center">
+                <h1>Cooming Soon</h1>
             </div>
         </div>
         <?php include '../Reuseable_Components/footer/footer.php';?>
