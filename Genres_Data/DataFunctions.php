@@ -39,6 +39,63 @@
             }
     }
 
+    function popular_genres(){
+        include "../db_connect.php";
+
+            $sql = "SELECT * FROM categories
+            CROSS JOIN genres ON categories.genre_id = genres.genre_id
+            WHERE category = 'popular'";
+
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                include '../Reuseable_Components/GenreCard.php';
+            }
+    }
+
+    function getting_started_genres(){
+        include "../db_connect.php";
+
+            $sql = "SELECT * FROM categories
+            CROSS JOIN genres ON categories.genre_id = genres.genre_id
+            WHERE category = 'getting_started'";
+
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                include '../Reuseable_Components/GenreCard.php';
+            }
+    }
+    
+    function multiplayer_genres(){
+        include "../db_connect.php";
+
+            $sql = "SELECT * FROM categories
+            CROSS JOIN genres ON categories.genre_id = genres.genre_id
+            WHERE category = 'multiplayer'";
+
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                include '../Reuseable_Components/GenreCard.php';
+            }
+    }
+
+    function Story_rich_genres(){
+        include "../db_connect.php";
+
+            $sql = "SELECT * FROM categories
+            CROSS JOIN genres ON categories.genre_id = genres.genre_id
+            WHERE category = 'Story_rich'";
+
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                include '../Reuseable_Components/GenreCard.php';
+            }
+    }
+
+
     function Dynamic_DetailsScreen(){
         include "GenresData.php";
 

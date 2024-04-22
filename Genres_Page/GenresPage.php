@@ -14,6 +14,9 @@
             <div class="row my-auto justify-content-center d-flex ">
                 <?php Genre_Cards();?>
             </div>
+            <!-- <div class="row my-auto justify-content-center d-flex "> -->
+                <!-- <?php getting_started_genres();?> -->
+            <!-- </div> -->
         </div>
         <?php include '../Reuseable_Components/footer/footer.php';?>
     </body>
