@@ -111,9 +111,6 @@
             }
         }
     }
-    
-    // echo ' ';
-    // echo sizeof($StandardArr);
 
     function Dynamic_CardsRand(){
         include "GenresDataRand.php";
@@ -129,16 +126,7 @@
             }
         }
     }
-    
-    // function ReviewSort(){
-    //     foreach($ReviewArr['1'] as SReview){
 
-    //     }
-    // }
-
-
-    // include "ReviewsData.php";
-    // print_r($StandardArr);
     function Review_CardTotal(){
         include "ReviewsData.php";
 
