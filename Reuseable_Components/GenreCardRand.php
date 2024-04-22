@@ -14,8 +14,6 @@
             <?php echo $data['4'];
             $data['0']; 
             ?></p> 
-            
-            </a>
         </div>
     </div>
 </div>

@@ -27,7 +27,23 @@
                 <h4 class="card-title text-center"><?php echo $fetch['genre_name']; ?></h4>
                 <p class="card-text">Description: <?php echo $fetch['Description'];?></p>
                 <p class="card-text">Rating: <?php echo $fetch['rating']; ?></p>
-                <p class="card-text">Number of ratings: <?php echo $fetch['number of ratings']; ?></p>
+                <p class="card-text">Number of ratings: <?php echo $fetch['number_of_ratings']; ?></p>
+                <?php
+                if(isset($_SESSION['user_id'])){
+                    echo "<div class='btn btn-basic justify-content-between align-items-right'>
+                        <?php include '../Favorites_Page/FavoritesSystem.php';?>
+                        <i class='fa fa-heart-o' style='font-size:36px;'></i>
+                        </div>";
+                }
+                else{
+                    echo "<div class='col-3 alert alert-warning' role='alert'>
+                            <p class='text-center'>Please
+                            <a href='../Sign-up_Log-in_Page/Login.php' class='alert-link'>Login</a>
+                            to add your favorites</p>
+                        </div>";
+                }
+                ?>
+                
             </div>
         </div>
     </div>

@@ -11,7 +11,7 @@
                     $genreid = $fetch["genre_id"];
                     $genrename = $fetch["genre_name"];
                     $rating = $fetch["rating"];
-                    $NoR = $fetch["number of ratings"];
+                    $NoR = $fetch["number_of_ratings"];
                     $Link = "<a href='../Genres_Page/DetailsPage.php?ID={$fetch['genre_id']}'>{$fetch['genre_name']}</a><br>\n";
                     $CurrentPlaceArr =  array();
                     array_push($CurrentPlaceArr, $genreid, $genrename, $rating, $NoR, $Link);

@@ -9,12 +9,10 @@
             <div class="justify-content-between align-items-center">
                 <?php include "../Reuseable_Components/Ratings/Star rating.php";?>
             </div>
-            <p class="card-text">Number of ratings: <?php echo $fetch['number of ratings']; ?></p>
+            <p class="card-text">Number of ratings: <?php echo $fetch['number_of_ratings']; ?></p>
             <p class="btn btn-basic">
             <?php echo "<a href='../Genres_Page/DetailsPage.php?ID={$fetch['genre_id']}'>{$fetch['genre_name']}</a><br>\n"; 
             ?></p> 
-            
-            </a>
         </div>
     </div>
 </div>

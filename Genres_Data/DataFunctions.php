@@ -26,6 +26,18 @@
             }
 
     }
+    
+    function Favorite_Cards(){
+        include "../db_connect.php";
+            
+            $userid = $_SESSION["user_id"];
+            $sql = "SELECT * FROM favorites WHERE user_id = '$userid'";
+            $results = $conn->query($sql);
+
+            while($fetch = mysqli_fetch_assoc($results)){
+                include '../Reuseable_Components/GenreCard.php';
+            }
+    }
 
     function Dynamic_DetailsScreen(){
         include "GenresData.php";
