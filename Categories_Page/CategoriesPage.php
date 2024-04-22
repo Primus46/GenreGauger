@@ -22,6 +22,10 @@
              <h3>Multiplayer:</h3>
                 <?php multiplayer_genres();?>
             </div>
+            <div class="row my-auto justify-content-center d-flex ">
+             <h3>Story rich:</h3>
+                <?php Story_rich_genres();?>
+            </div>
         </div>
         <?php include '../Reuseable_Components/footer/footer.php';?>
     </body>
